@@ -1,12 +1,12 @@
 import spinner from './spinner.gif'
 
-const Loader = () => {
+const Loading = () => {
     return (
         <div className="loader">
             <img src={spinner} alt="Loading" />
-            <h1>Loading page</h1>
+            <h1>Fetching Data</h1>
         </div>
     )
 }
 
-export default Loader
+export default Loading

@@ -4,6 +4,8 @@ import ProductListing from "./containers/ProductListing";
 import Header from "./containers/Header";
 import "./App.css";
 import ProductDetails from "./containers/ProductDetails";
+import Pagination from "./containers/Pagination"
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route>404 Not Found!</Route>
         </Switch>
       </Router>
+      <Pagination/>
     </div>
   );
 }

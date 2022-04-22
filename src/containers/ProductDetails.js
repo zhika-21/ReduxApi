@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import Loading from "./Loading";
+
+
 import { useDispatch, useSelector } from "react-redux";
 import {
   selectedProduct,
@@ -15,7 +16,8 @@ const ProductDetails = () => {
   const dispatch = useDispatch();
   const fetchProductDetail = async (id) => {
     const response = await axios
-      .get(`https://fakestoreapi.com/products/${id}`)
+       .get(`https://mocki.io/v1/c9763114-550a-4fbd-99f2-7fbc8706f2f3/${id}`)
+   
       .catch((err) => {
         console.log("Err: ", err);
       });
@@ -30,10 +32,11 @@ const ProductDetails = () => {
   }, [productId]);
   return (
     <div className="ui grid container">
-      {Object.keys(product).length === 0 ? (
+      {/* {Object.keys(product).length === 0 ? (
         <Loading/>
+       
         // <div>...Loading</div>
-      ) : (
+      ) : ( */}
         <div className="ui placeholder segment">
           <div className="ui two column stackable center aligned grid">
             <div className="ui vertical divider">AND</div>
@@ -58,7 +61,7 @@ const ProductDetails = () => {
             </div>
           </div>
         </div>
-      )}
+      {/* )} */}
     </div>
   );
 };
