@@ -10,7 +10,7 @@ const ProductPage = () => {
   const dispatch = useDispatch();
   const fetchProducts = async () => {
     const response = await axios
-      .get("https://mocki.io/v1/df3b3b91-83ff-411c-813b-e680c0b5cc26")
+      .get("https://mocki.io/v1/7ddee532-4af3-4850-a997-02612c55437d")
    
       .catch((err) => {
         console.log("Err: ", err);

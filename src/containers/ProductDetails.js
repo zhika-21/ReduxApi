@@ -16,7 +16,7 @@ const ProductDetails = () => {
   const dispatch = useDispatch();
   const fetchProductDetail = async (id) => {
     const response = await axios
-       .get(`https://mocki.io/v1/c9763114-550a-4fbd-99f2-7fbc8706f2f3/${id}`)
+       .get(`https://mocki.io/v1/7ddee532-4af3-4850-a997-02612c55437d/${id}`)
    
       .catch((err) => {
         console.log("Err: ", err);
